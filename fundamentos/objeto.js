@@ -8,6 +8,6 @@ console.log(prod1)
 const prod2 = {
     nome: 'Camisa polo',
     preco: 59.90,
-    qualidade: 'boa'
+    qualidade: 'boa',
 }
 console.log (prod2)
