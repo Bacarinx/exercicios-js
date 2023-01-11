@@ -19,7 +19,6 @@ function progressaoGeometrica(numero, primeiroTermo, razao) {
         soma = soma + vetorProgressao[i]
     }
     console.log(vetorProgressao, soma)
-
 }
 
 progressaoAritimetica(5, 3, 3)

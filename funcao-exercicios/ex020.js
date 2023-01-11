@@ -65,4 +65,4 @@ function quantidadeDeCelulas(dinheiro) {
 
 }
 
-quantidadeDeCelulas(1500)
+quantidadeDeCelulas(746)
