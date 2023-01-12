@@ -13,3 +13,15 @@ const sequencia = {
 console.log(sequencia.valor, sequencia.valor)
 sequencia.valor = 500
 console.log(sequencia.valor, sequencia.valor)
+
+const dobro = {
+    _v: 0,
+    get v() {
+        return 'value:' + _v
+    },
+    set v(valor) {
+        _v = valor * 2
+    }
+}
+dobro.v = 3
+console.log(dobro.v)
