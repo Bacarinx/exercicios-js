@@ -17,6 +17,7 @@ console.log(aprovados)
 
 delete aprovados[1] //deleta o valor do indice 1 e deixa ele indefinido
 console.log(aprovados[1]) //indefinido
+
 aprovados = ['Bia', 'Ana', 'Thayna', 'Carlos', 'Henrique']
 console.log(aprovados) //[ 'Bia', 'Ana', 'Thayna', 'Carlos', 'Henrique' ]
 
