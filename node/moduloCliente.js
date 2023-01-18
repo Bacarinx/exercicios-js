@@ -1,7 +1,6 @@
 //importamos um modulo usando o 'require'
 
 const moduloA = require('./moduloA')
-const { boaNoite } = require('./moduloB')
 const moduloB = require('./moduloB')
 
 console.log(moduloA.ola)
