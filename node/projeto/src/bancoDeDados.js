@@ -18,4 +18,4 @@ function getProdutos() {
     return Object.values(produtos) //exibe todos os produtos contidos na lista de objetos "produtos"
 }
 
-module.exports = { salvarProduto, getProduto, getProdutos }
+module.exports = { salvarProduto, getProduto, getProdutos } //deixando publico as 3 funções
