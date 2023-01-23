@@ -1,25 +1,13 @@
-function esperarPor(tempo = 2000) {
-    return new Promise((resolve, reject) => {
+function esperarPor(tempo = 2000) { //função pra criar um tempo de espera
+    return new Promise(resolve => {
         setTimeout ( () => {
-            resolve()
+            resolve(10)
         }, tempo)
     })
 }
 
-// esperarPor(2000)
-//     .then(esperarPor)
-//     .then(esperarPor)
-
-function retornarValor () {
-    return new Promise (resolve => {
-        setTimeout(() => {
-            resolve(10)
-        },2000)
-    })
-}
-
 async function executar() {
-    let valor = await retornarValor()
+    let valor = await esperarPor()
 
     await esperarPor(1000)
     console.log(`Async/Await ${valor}`)
