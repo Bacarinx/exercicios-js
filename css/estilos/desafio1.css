@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(191, 191, 194);
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.753);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-bottom: 8px solid skyblue;
+}
+
+.logo{
+    width: min(50%, 450px);
+}
+
+.logo img{
+    max-width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+}
+
+.menu-toggle {
+    width: 50px;
+    background-color: rgba(187, 178, 178, 0.459);
+    border-radius: 10px;
+}
+
+.menu-toggle:hover, .menu-toggle.selected {
+    background-color: skyblue;
+}
+
+.menu {
+    display: none;
+}
+
+.autenticacao {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .menu-toggle {
+        display: none;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        font-size: 1.4em;
+        
+    }
+
+    .menu ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .menu ul li {
+        padding: 15px 10px;
+        border-radius: 10px;
+        
+    }
+
+    .menu ul li:hover, .menu ul li.selected  {
+        background-color: skyblue;
+    }
+
+    .menu ul li:nth-child(4) {
+        background-color: rgb(86, 86, 184);
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .menu-toggle {
+        display: none;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
+        font-size: 1.4em;
+        padding: 0px 20px;
+    }
+
+    .menu ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .menu ul li {
+        padding: 15px 10px;
+        border-radius: 10px;
+    }
+
+    .menu ul li:nth-child(4) {
+        background-color: rgb(86, 86, 184);
+        border-radius: 8px;
+    }
+
+    .menu ul li:hover, .menu ul li.selected {
+        background-color: skyblue;
+    }
+
+    .autenticacao {
+        display: flex;
+        align-items: center;
+        font-size: 1.4em;
+        gap: 20px;
+
+    }
+
+    .autenticacao a{
+        padding: 15px 20px;
+        border-radius: 10px;
+    }
+
+    .autenticacao a:nth-child(2) {
+        background-color: red;
+        padding: 15px 20px;
+        border-radius: 40px;
+    }
+
+    .autenticacao a:hover, .autenticacao a.selected {
+        background-color: skyblue;
+    }
+}
