@@ -9,8 +9,31 @@
     <div id="primeiro">#primeiro</div>
     <div>Segundo</div>
     <div class="terceiro ultimo"><span wb-attrib>.terceiro .ultimo</span></div>
+
     <script>              
-        // ...
+        document.querySelector('#primeiro').classList.add('destaque')
+
+        const selecionar = seletor => {
+            document.querySelectorAll(seletor).forEach(e => e.classList.add('destaque'))
+        }
+        
+        const deselecionar = seletor => {
+            document.querySelectorAll(seletor).forEach(e => e.classList.remove('destaque'))
+        }
+
+        selecionar('div') //selecionando Div
+        deselecionar('*')
+
+        selecionar('.terceiro.ultimo') //selecionando a classe .ultimo.terceiro
+        deselecionar('*')
+
+        selecionar(':not(#primeiro') //selecionando todos menos o primeiro
+        deselecionar('*')
+
+        selecionar(':nth-child(1)') //selecionando o primeiro filho(elemento)
+        deselecionar('*')
+
+        selecionar('[wb-attrib]')
     </script>
 </body>
 </html>
