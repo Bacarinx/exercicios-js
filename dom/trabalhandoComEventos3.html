@@ -46,14 +46,13 @@
     <div class="direita" wm-dropzone></div>
     <script>
         
-        const item = document.querySelectorAll('[wm-dropzone] .item')
+        const items = document.querySelectorAll('[wm-dropzone] .item')
 
-        item.forEach((item, index) => {
+        items.forEach((item, index) => {
             item.draggable = true
             item.id = item.id || `draggable-item-${index}`
             item.ondragstart = e => 
-                e.dataTransfer.setData('item-id', e.target.id)
-            
+                e.dataTransfer.setData('item-id', e.target.id)  
         })
 
         const dropzones = document.querySelectorAll('[wm-dropzone]')
