@@ -16,7 +16,7 @@ function Barreira (reversa = false) {
 }
 
 function ParDeBarreiras(altura, abertura, x) {
-    this.elemento = novoElemento('div', 'par-de-barreiras')
+    this.elemento = novoElemento('div', 'par-de-barreira')
 
     this.superior = new Barreira(true)
     this.inferior = new Barreira(false)
