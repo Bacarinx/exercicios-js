@@ -17,6 +17,24 @@
     <p class='numero'>5</p>
 
     <script>
-        // ...
+        $('#div1').append(', 2')
+        $('#div1').prepend('0, ')
+        $('#div1').append(', <span>3</span>')
+        $('#div1').prepend('<span>-1, </span>')
+
+        $('#div2').before('<p>Antes 2</p>') //coloca um elemento antes da #div2
+        $('#div2').after('<p>Depois 2</p>') //coloca um elemento depois da #div2
+
+        $('#div3').before('<p>Antes 3</p>') //coloca um elemento antes da #div3
+        $('#div3').after('<p>Depois 3</p>') //coloca um elemento depois da #div3
+        
+        $('p.numero').wrap('<div>') //empocata cada elemento em uma div
+        $('p.numero').wrapAll('<div id="div4">') //empacota todos os elementos selecionado em uma div
+        $('#div4').empty() //esconde o elemento selecionado
+        $('#div3, #div4').prev().remove() //remove todos os conteudos anteriores a div 3 e 4
+
+        $('body > p').replaceWith('<div>Substituto</div>' ) //substitui todos os paragrafos por uma div substituto
+
+
     </script>
 </body>
