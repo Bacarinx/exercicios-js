@@ -15,6 +15,26 @@
     <div id='div3'>3</div>
     <div id='resultado'></div>
     <script>
-        // ...
+        const fonte = $('#div1').css('font-family') //lendo o valor do css
+        $('#resultado').append(`Fonte é ${fonte}`)
+        
+        $('#div1').css('font-size', '3em') //alterando o valor do css
+        $('#div1').css({'font-size': '3.5', 'color': 'yellow'}) //alterando mais de um valor no css
+
+        $('#div1').css('font-seze', function() { //modificando o css a partir de um callback
+            return `${2 * 2}em`
+        })
+
+        $('#div2').addClass('destaque') //adicionando classe a um id
+
+        const temClasse = $('#div2').hasClass('destaque') //verificando se o id tem tal classe
+        $('#resultado').append(`<br>Tem classe? ${temClasse}`)
+
+        $('#div2').removeClass('destaque') //removendo a cleasse
+        $('#div2').toggleClass('destaque') //intercala na classe
+        
+
+
+
     </script>
 </body>
